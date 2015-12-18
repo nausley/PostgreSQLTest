@@ -13,3 +13,26 @@ namespace PostgreSQLTest
         }
     }
 }
+
+//using (var conn = new NpgsqlConnection("Host=myserver;Username=mylogin;Password=mypass;Database=mydatabase"))
+//{
+//    conn.Open();
+//    using (var cmd = new NpgsqlCommand())
+//    {
+//        cmd.Connection = conn;
+//
+//        // Insert some data
+//        cmd.CommandText = "INSERT INTO data (some_field) VALUES ('Hello world')";
+//        cmd.ExecuteNonQuery();
+//
+//        // Retrieve all rows
+//        cmd.CommandText = "SELECT some_field FROM data";
+//        using (var reader = cmd.ExecuteReader())
+//        {
+//            while (reader.Read())
+//            {
+//                Console.WriteLine(reader.GetString(0));
+//            }
+//        }
+//    }
+//}
